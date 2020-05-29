@@ -1,0 +1,54 @@
+.nav__item{
+    h2 {
+        padding-top: 10px;
+        margin-left: 5px;
+    }
+
+}
+
+.list li {
+    font-size: 20px;
+    list-style-type: none;
+    margin-left: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 10px;
+    width: 250px;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+}
+
+.list li:hover{
+    background-color: #ffffff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.millingSvg {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.svgDrill {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.thread {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    transform: rotate(90deg);
+}
+
+.machinery{
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
