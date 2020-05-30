@@ -1,7 +1,5 @@
 import React from 'react';
-import FaceMilling from '../CalcFaceMilling/CalcFaceMilling';
-import {Link, Route} from 'react-router-dom';
-import Calc from '../CalcStepMilling/CalcStepMilling';
+import {Link} from 'react-router-dom';
 
 import './Milling.scss';
 
@@ -21,13 +19,13 @@ const Milling = (props) => {
           </div>
         </Link>
 
-        <Link to='/CalcStepMilling' style={{textDecoration: 'none'}}>
+        <Link to='/calcStepMilling' style={{textDecoration: 'none'}}>
           <div className="block__stepMilling">
             <p>Фрезерование уступов</p>
           </div>
         </Link>
 
-        <Link to='CalcGrooveМilling' style={{textDecoration: 'none'}}>
+        <Link to='/calcGrooveMilling' style={{textDecoration: 'none'}}>
           <div className="block__grooveМilling">
             <p>Фрезерование пазов</p>
           </div>

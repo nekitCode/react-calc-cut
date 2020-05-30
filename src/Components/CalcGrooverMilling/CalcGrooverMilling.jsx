@@ -1,11 +1,14 @@
 import React from 'react';
+import CalcFaceMilling from '../CalcFaceMilling/CalcFaceMilling';
 
 import './CalcGrooverMilling.scss';
+
 
 function CalcGrooverMilling() {
     return (
         <div>
-            <h1>CalcGrooverMilling</h1>
+            <div className="lineInfoGroover">Фрезерование пазов</div>
+            
         </div>
     )
 }

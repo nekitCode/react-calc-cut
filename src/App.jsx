@@ -22,8 +22,7 @@ function App() {
       <div className='container'>
           <div className='navBar__menu'>
             <List/>
-            <Directory/>
-            
+            <Directory/> 
           </div>
         <div className='inform'>
           <Route path='/turning' exact component={Turning} />
@@ -32,7 +31,7 @@ function App() {
           <Route path='/thread' exact component={Thread} />
           <Route path='/calcFaceMilling' exact component={CalcFaceMilling} />
           <Route path='/calcStepMilling' exact component={CalcStepMilling} />
-          <Route path='/calcGrooverMilling' exact component={CalcGrooverMilling} />
+          <Route path='/calcGrooveMilling' exact component={CalcGrooverMilling} />
           </div>
       </div>
     </BrowserRouter>
