@@ -1,5 +1,5 @@
 import React from 'react';
-import CalcFaceMilling from '../CalcFaceMilling/CalcFaceMilling';
+//import CalcFaceMilling from '../CalcFaceMilling/CalcFaceMilling';
 
 import './CalcStepMilling.scss';
 
