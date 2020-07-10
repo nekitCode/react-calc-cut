@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 import './Milling.scss';
 
@@ -13,23 +13,23 @@ const Milling = (props) => {
       </div>
 
       <div className="block">
-        <Link to='/calcfaceMilling' style={{textDecoration: 'none'}}>
+        <NavLink to='/calcfaceMilling' style={{textDecoration: 'none'}}>
           <div className="faceMilling">
             <p>Торцевое фрезерование</p>
           </div>
-        </Link>
+        </NavLink>
 
-        <Link to='/calcStepMilling' style={{textDecoration: 'none'}}>
+        <NavLink to='/calcStepMilling' style={{textDecoration: 'none'}}>
           <div className="block__stepMilling">
             <p>Фрезерование уступов</p>
           </div>
-        </Link>
+        </NavLink>
 
-        <Link to='/calcGrooveMilling' style={{textDecoration: 'none'}}>
+        <NavLink to='/calcGrooveMilling' style={{textDecoration: 'none'}}>
           <div className="block__grooveМilling">
             <p>Фрезерование пазов</p>
           </div>
-        </Link>
+        </NavLink>
 
       </div>
     </div>

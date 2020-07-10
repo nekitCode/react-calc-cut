@@ -22,7 +22,25 @@ p,h1,h2,h3,ul,li {
 
 .inform {
     width: 80%;
+    height: 100vh;
     background-color: #f1f1f1;
 }
 
-// #E8E8E8
+@media (max-width: 1060px){
+    .navBar__menu {
+        height: 755px;
+        background-color: #dddddd;
+    }
+
+    .inform {
+        background-color: #f1f1f1;
+        height: 100%;
+    }
+}
+
+@media (max-width: 816px){
+    .navBar__menu {
+        height: 1235px;
+        background-color: #dddddd;
+    }
+}

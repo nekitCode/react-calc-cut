@@ -13,14 +13,14 @@ const List = () => {
       <h2>Калькулятор режимов резания :</h2>
       <ul className='list'>
 
-      <NavLink to='/Turning' style={{textDecoration:'none', color:'#000' }}>
+      <NavLink activeClassName ='active' to='/Turning' style={{textDecoration:'none', color:'#000' }}>
           <li>
             <img src={machinerySvg} alt="machinery" className='machinery'/>
             Точение
           </li>
         </NavLink>
         
-        <NavLink to='/Drilling' style={{textDecoration:'none', color:'#000' }}>
+        <NavLink to='/Drilling' style={{textDecoration:'none', color:'#000' }} >
           <li>
             <img src={drillSvg} alt="drill" className='svgDrill'/>
             Сверление

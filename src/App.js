@@ -1,4 +1,5 @@
 import React from 'react';
+import Directory from './Components/Directory/Directory';
 import List from './Components/List/List';
 import Turning from './Components/Turning/Turning';
 import Drilling from './Components/Drilling/Drilling';
@@ -7,11 +8,16 @@ import Thread from './Components/Threadprocessing/Thread';
 import CalcStepMilling from './Components/CalcStepMilling/CalcStepMilling';
 import CalcGrooverMilling from './Components/CalcGrooverMilling/CalcGrooverMilling';
 import CalcFaceMilling from './Components/CalcFaceMilling/CalcFaceMilling';
+import CalcAsymmetricDrilling from './Components/CalcAsymmetricDrilling/CalcAsymmetricDrilling';
+import CalcSymmetricalDrilling from './Components/CalcSymmetricalDrilling/CalcSymmetricalDrilling';
+import CalcBoreHole from './Components/CalcBoreHole/CalcBoreHole';
+import ImgFx from "./Components/CalcFaceMilling/LinkIMgFx/IMgFx/ImgFx";
 
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import './App.scss';
-import Directory from './Components/Directory/Directory';
+
+
 
 
 
@@ -32,6 +38,11 @@ function App() {
           <Route path='/calcFaceMilling' exact component={CalcFaceMilling} />
           <Route path='/calcStepMilling' exact component={CalcStepMilling} />
           <Route path='/calcGrooveMilling' exact component={CalcGrooverMilling} />
+          <Route path='/calcAsymmetricDrilling' exact component={CalcAsymmetricDrilling} />
+          <Route path='/calcSymmetricalDrilling' exact component={CalcSymmetricalDrilling} />
+          <Route path ='/сalcBoreHole' exact component={CalcBoreHole} />
+          <Route path='/imgFx' exact component={ImgFx} />
+
           </div>
       </div>
     </BrowserRouter>
