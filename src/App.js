@@ -12,6 +12,7 @@ import CalcAsymmetricDrilling from './Components/CalcAsymmetricDrilling/CalcAsym
 import CalcSymmetricalDrilling from './Components/CalcSymmetricalDrilling/CalcSymmetricalDrilling';
 import CalcBoreHole from './Components/CalcBoreHole/CalcBoreHole';
 import ImgFx from "./Components/CalcFaceMilling/LinkIMgFx/IMgFx/ImgFx";
+import ImgDr from './Components/CalcSymmetricalDrilling/LinkBtnDrill/ImgDr';
 
 import {BrowserRouter, Route} from 'react-router-dom';
 
@@ -41,7 +42,8 @@ function App() {
           <Route path='/calcAsymmetricDrilling' exact component={CalcAsymmetricDrilling} />
           <Route path='/calcSymmetricalDrilling' exact component={CalcSymmetricalDrilling} />
           <Route path ='/сalcBoreHole' exact component={CalcBoreHole} />
-          <Route path='/imgFx' exact component={ImgFx} />
+          <Route path='/ImgFx' exact component={ImgFx} />
+          <Route path='/ImgDr' exact component={ImgDr} />
 
           </div>
       </div>

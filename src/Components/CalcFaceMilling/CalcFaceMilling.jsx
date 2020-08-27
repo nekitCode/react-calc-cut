@@ -1,7 +1,8 @@
-import './CalcFaceMilling.scss';
-import LinkIMgFx from "./LinkIMgFx/LinkIMgFx";
 import React,{Component} from 'react';
 
+import LinkIMgFx from "./LinkIMgFx/LinkIMgFx";
+
+import './CalcFaceMilling.scss';
 
 class CalcFaceMilling extends Component {
 
@@ -24,8 +25,9 @@ class CalcFaceMilling extends Component {
         this.numberOfTeeth = this.numberOfTeeth.bind(this);
         this.feedOnTooth = this.feedOnTooth.bind(this);
         this.minuteFeed = this.minuteFeed.bind(this);
-        this.rotationFrequency = this.rotationFrequency.bind(this);
+        // this.rotationFrequency = this.rotationFrequency.bind(this);
         this.feedPerRevolution = this.feedPerRevolution.bind(this);
+
     }
 
 
@@ -38,10 +40,10 @@ class CalcFaceMilling extends Component {
         this.setState({ speedCutingValue: e.target.value,})
     }
 
-    rotationFrequency() {
-        this.setState({
-            result: Math.floor((this.state.divide*this.state.speedCutingValue)/(this.state.pi * this.state.diametrValue))
-        })
+    rotationFrequency = () => {
+            this.setState({
+                result: Math.floor((this.state.divide*this.state.speedCutingValue)/(this.state.pi * this.state.diametrValue))
+            })
     }
 
     numberOfTeeth(e) {
@@ -100,7 +102,7 @@ class CalcFaceMilling extends Component {
                         <input type="number"
                                onClick={this.rotationFrequency}
                                onChange={()=>{}}
-                               value={this.state.result}
+                               value={this.state.result || ''}
                         />
 
                         <div className='calcTable__desc-short '>n | RPM</div>
@@ -134,7 +136,7 @@ class CalcFaceMilling extends Component {
                         <input type="number"
                                onClick={this.minuteFeed}
                                onChange={()=>{}}
-                               value={this.state.minuteFeedValue}
+                               value={this.state.minuteFeedValue || ''}
                         />
 
                         <div className='calcTable__desc-short '>vf | mm/min</div>
@@ -159,10 +161,10 @@ class CalcFaceMilling extends Component {
                     <div className="result">
                         <p>Диаметр : <span>{this.state.diametrValue} </span></p>
                         <p>Скорость резания : <span>{this.state.speedCutingValue}</span></p>
-                        <p>Частота вращения : <span>{this.state.result}</span></p>
+                        <p>Частота вращения : <span>{this.state.result || ''}</span></p>
                         <p>Количество зубьев : <span>{this.state.numberOfTeethValue}</span></p>
                         <p>Подача на зуб : <span>{this.state.feedOnToothValue}</span></p>
-                        <p>Минутная подача : <span>{this.state.minuteFeedValue}</span></p>
+                        <p>Минутная подача : <span>{this.state.minuteFeedValue || ''}</span></p>
                         <p>Подача на оборот : <span>{this.state.feedPerRevolutionValue}</span></p>
                     </div>
 

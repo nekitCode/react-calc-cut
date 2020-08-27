@@ -1,4 +1,4 @@
-.lineInfoGroover {
+.lineInfo-groover {
     width: 100%;
     height: 50px;
     background-color: #589354;
@@ -8,3 +8,14 @@
     font-size: 25px;
     color: #ffffff;
 }
+
+.groover-milling {
+    
+    &__groover-container {
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+

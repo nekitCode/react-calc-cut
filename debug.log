@@ -1,0 +1,5 @@
+[0821/180658.499:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0822/062050.833:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0826/171612.983:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0827/111501.593:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0827/204131.441:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\bhnnn\AppData\Local\Google\Chrome Dev\User Data\Crashpad\attachments\b890ece3-b7dd-45e7-8c21-4800ae39edd4: Системе не удается найти указанный путь. (0x3)
